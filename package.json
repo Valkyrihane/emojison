@@ -1,0 +1,25 @@
+{
+  "name": "emojison",
+  "version": "1.0.0",
+  "description": "npm package letting you access any base64 emoji image from https://unicode.org/emoji/charts/full-emoji-list.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Valkyrihane/emojison.git"
+  },
+  "keywords": [
+    "emoji",
+    "base64",
+    "json",
+    "image"
+  ],
+  "author": "Valkyrihane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Valkyrihane/emojison/issues"
+  },
+  "homepage": "https://github.com/Valkyrihane/emojison#readme"
+}
