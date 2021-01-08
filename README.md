@@ -68,13 +68,14 @@ e.getEmoji('my new emoji'); // undefined
 Returns the image src of the selected service. If `all` or `emoji` was chosen as an initial service, the second parameter will let you chose between the emoji different images. An empty string will be returned if the service does not support the emoji.
 ```js
 const e = new Emojison('appl');
-e.getEmoji('my new emoji') // undefined
-e.getEmoji('grinning face') // 'data:image/png;base64...' apple style
-e.getEmoji('grinning face', 'goog') // second parameter is ignored
+e.getEmojiSrc('my new emoji') // undefined
+e.getEmojiSrc('grinning face') // 'data:image/png;base64...' apple style
+e.getEmojiSrc('grinning face', 'goog') // second parameter is ignored
 
 const j = new Emojison('all');
-j.getEmoji('grinning face') // { goog: 'base64image', appl: 'base64image', ... }
-j.getEmoji('grinning face', 'goog') // 'data:image/png;base64...' google style
+j.getEmojiSrc('grinning face') // { goog: 'base64image', appl: 'base64image', ... }
+j.getEmojiSrc('grinning face', 'goog') // 'data:image/png;base64...' google style
+j.getEmojiSrc('grinning face', 'kddi') // ''
 ```
 
 For more info about supported services and emoji name list, please check https://unicode.org/emoji/charts/full-emoji-list.html, https://unicode.org/emoji/format.html#col-vendor, or https://github.com/Valkyrihane/emoji-scrapper.
